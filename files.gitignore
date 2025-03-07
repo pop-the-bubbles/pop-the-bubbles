@@ -1,4 +1,4 @@
 # Ignore JavaScript, CSS, and HTML files
-*.js
-*.css
-*.html
+script.js
+style.css
+index.html
