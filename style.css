@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #C8C8C8; /* Sky blue */
+}
+
+canvas {
+    border: 2px solid black;
+    background-color: #dedede; /* Ground color */
+}

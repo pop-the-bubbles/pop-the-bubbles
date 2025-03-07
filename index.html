@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop the Bubbles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="banner_1final.png" alt="The controls you need to play!">
+    <canvas id="gameCanvas" width="800" height="400"></canvas>
+    <script src="script.js"></script>
+    <img src="banner_2final.png" alt="The controls you need to play!">
+    <audio id="bgMusic" autoplay loop>
+        <source src="song_for_game.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+
+    <script>
+     document.addEventListener("keydown", () => {
+         const bgMusic = document.getElementById("bgMusic");
+
+         // Try to play the music when any key is pressed
+         bgMusic.muted = false;
+         bgMusic.play().catch(error => {
+             console.log("Autoplay was blocked. Waiting for further user interaction.");
+         });
+     }, { once: true }); // Ensures the event runs only once
+
+    </script>
+</body>
+</html>
